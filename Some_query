@@ -1,0 +1,42 @@
+CREATE TABLE time_slot( time_slot_id varchar(10), day varchar(10), start_time time, end_time time, PRIMARY KEY(time_slot_id,day,start_time) )
+
+insert into time_slot values('First','SUN','09:00:00','09:50:00');
+insert into time_slot values('Second','SUN','10:00:00','10:50:00');
+insert into time_slot values('Third','SUN','11:00:00','11:50:00');
+insert into time_slot values('Fourth','SUN','12:00:00','12:50:00');
+
+
+insert into time_slot values('First','MON','11:00:00','11:50:00');
+insert into time_slot values('Second','MON','11:00:00','11:50:00');
+insert into time_slot values('Third','MON','11:00:00','11:50:00');
+insert into time_slot values('Fourth','MON','11:00:00','11:50:00');
+
+
+insert into time_slot values('First','TUE','11:00:00','11:50:00');
+insert into time_slot values('Second','TUE','11:00:00','11:50:00');
+insert into time_slot values('Third','TUE','11:00:00','11:50:00');
+insert into time_slot values('Fourth','TUE','11:00:00','11:50:00');
+
+
+insert into time_slot values('First','Wed','11:00:00','11:50:00');
+insert into time_slot values('Second','Wed','11:00:00','11:50:00');
+insert into time_slot values('Third','Wed','11:00:00','11:50:00');
+insert into time_slot values('Fourth','Wed','11:00:00','11:50:00');
+
+
+insert into time_slot values('First','THU','11:00:00','11:50:00');
+insert into time_slot values('Second','THU','11:00:00','11:50:00');
+insert into time_slot values('Third','THU','11:00:00','11:50:00');
+insert into time_slot values('Fourth','THU','11:00:00','11:50:00');
+
+
+
+/****************************************************************/
+SELECT name,salary FROM instructor WHERE dept_name='Comp. Sci.' and salary>70000
+
+SELECT instructor.name,course_id FROM instructor,teaches WHERE instructor.dept_name='Comp. Sci.' and instructor.ID = teaches.ID;
+
+SELECT dept_name FROM department WHERE building LIKE '%watson%';
+
+SELECT name FROM instructor WHERE dept_name LIKE 'Physics';
+
